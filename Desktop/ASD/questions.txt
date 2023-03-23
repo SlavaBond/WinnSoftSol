@@ -1,0 +1,27 @@
+Questions:
+
+tech questions
+ 1. Do you want apps to be compatible with Android and iOS?
+ 2. Where do you want us to store the user data? Do you want to utilise our storage services or something else? Since we are dealing with user data and permission to certain services on their phone we need to make sure if we have consent and confirmation from your end.
+
+
+Registration
+ 1. Registration - login (username/email/nickname) password (password complexity/characters/numbers)
+ 2.  How does the application understand user privilege? When registering, enter user ID(which is given when hiring, and for example this id is a user key from the database and there is a privilege parameter that only the admin has access to)
+ 3. what else when registering with the app? Should the user enter their data manually (first name, last name....) or should they be automatically pulled from the employee database when entering a unique id?
+ 4. Password recovery (email/sms/through admin)
+
+Using /admin
+ Can the admin change employee data? (Means to give permission to make changes in the database)
+ 2. Who adds new employees to the database?
+ 3. Rearrange the logs, but not edit them
+ 4. Is there a hierarchy among admins? 
+ 5. What if the admin loses his/her access to the app or their device? How do you want us to reauthentication the admin? 
+
+Use / not admin
+ 1. All employee classes can book a room?
+ 2. use logs to calculate working hours?
+ 3. room reservations : minimum/maximum time
+ 4. Overall how many rooms do we have available for employees and if we don’t have any rooms available how should we proceed in such cases?
+
+

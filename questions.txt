@@ -13,10 +13,10 @@ Registration
 
 Using /admin
  Can the admin change employee data? (Means to give permission to make changes in the database)
- 2. Who adds new employees to the database?
+ 2. Who adds new employees to the database? (HR/admin)
  3. Rearrange the logs, but not edit them
- 4. Is there a hierarchy among admins? 
- 5. What if the admin loses his/her access to the app or their device? How do you want us to reauthentication the admin? 
+ 4. Is there a hierarchy among admins? (yes->which?)
+ 5. What if the admin loses their access to the app or their device? How do you want us to reauthentication the admin? 
 
 Use / not admin
  1. All employee classes can book a room?

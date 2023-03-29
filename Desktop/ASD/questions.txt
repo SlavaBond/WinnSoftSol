@@ -1,38 +1,58 @@
 Questions:
 
-main idea:  user logs to an application, to access a room they open qr-code scanner in app, and scan code of the door -> app shows wheather user has access to the room or no.
-  
 
+main idea:  user logs to an application, to access a room they open qr-code scanner in app, and scan code of the door -> app shows wheather user has access to the room or no. HR can add a new user and modify acc. Admin can add a room, modify access and looke through logs.
+  
+HR collects data about new employee/visitors and creates an account for them (adds all the data to CDB) and returns employee ID number ( ID == login ).
 
 
 tech questions
+
  1. Do you want apps to be compatible with Android and iOS? - android
  2. Where do you want us to store the user data? Do you want to utilise our storage services or something else? Since we are dealing with user data and permission to certain services on their phone we need to make sure if we have consent and confirmation from your end.  - doesnot matter because it is just a simulation
 
 
 Registration
- 1. Registration - login (username/email/nickname) password (password complexity/characters/numbers) -> registration approved, login - ?????
+ 1. Registration - login (employee id) password (password complexity/characters/numbers) -> registration approved
  2.  How does the application understand user privilege? When registering, enter user ID(which is given when hiring, and for example this id is a user key from the database and there is a privilege parameter that only the admin has access to) -> по долбоёбски, profile is created by admin (user register by ....) 
  3. what else when registering with the app? Should the user enter their data manually (first name, last name....) or should they be automatically pulled from the employee database when entering a unique id?  -> пожалуйста ДААААА!*
  4. Password recovery (email/sms/through admin) -> email/admin
+
 
 Using /admin
  1. Can the admin change employee data? (Means to give permission to make changes in the database) -> yes
  2. Who adds new employees to the database? -> HR/admin
  3. Look through the logs, but not edit them -> yes, only admins
  4. Is there a hierarchy among admins? -> no
- 5. What if the admin loses his/her access to the app or their device? How do you want us to reauthentication the admin? -> ?!?!?
+ 5. What if the admin loses his/her access to the app or their device? How do you want us to reauthentication the admin? -> email to another admin
+ 6. Admin can change priority of employees.
+ 7. open close acc
+
 
 Use / not admin
  1. All employee classes can book a room? -> all (not guests/visitors)
  2. use logs to calculate working hours? 
  3. room reservations : minimum/maximum time -> 1 hour - 1 day
  4. Overall how many rooms do we have available for employees and if we don’t have any rooms available how should we proceed in such cases? -> никак
+ 5. How many rooms? - 50 (30 offices, )
+ 6. If the room is booked and employee tries to get in there he will get a notification about booking
+ 7. when book a room add all ID.
+ 8. how many rooms for each position?
+ 
+ 
+ roles
+ 1. visitors - open areas
+ 2. subcontracts - book a room, cant have a visitor
+ 3. internal employees
+ 4. hr - create acc for users, approves booking
+ 5. admin - gives qr create room modify access of a room
+ log: room, time, people 
 
+hr - creates account and modifies acc, same as privolages
+admin with rooms add  new room gives access
+admin creates a qr code
+employee accepts/refuses a visitor and can give them access to rooms employee has access to.
 
-
-
-*спросить еще раз что выступает в роли логина, уточнить пусть HR вводит все данные сотрудника (имя, адрес, контактные данные, должность) в систему и в замен выдает айдишник -> доступ к аккаунту(+пароль)
 
 
 
